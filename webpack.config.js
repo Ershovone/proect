@@ -31,10 +31,13 @@ module.exports = {
         },
         {
             test: /\.scss$/,
-            use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: ['css-loader', 'sass-loader'],
-            })),
+            exclude: /node_modules/,
+            loader: 'style!css!sass'
+            // test: /\.scss$/,
+            // use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+            //     fallback: 'style-loader',
+            //     use: ['css-loader', 'sass-loader'],
+            // })),
         }]
     },
     resolve: {
