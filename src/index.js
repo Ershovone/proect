@@ -1,3 +1,2 @@
-import '../public/style.css'
-
+require('./style/main.scss');
 console.warn("HIHIHIHI");
