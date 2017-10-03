@@ -1,3 +1,3 @@
-import '../public/style.css'
+import 'style.scss'
 
 console.warn("HIHIHIHI");
